@@ -1,0 +1,355 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Sansita&family=Solway&display=swap" rel="stylesheet"> 
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Sansita&family=Solway&display=swap');
+	
+	html, body {
+		margin: 0;
+		padding: 0;
+		background: #E5E5E5;
+	}
+
+#parte1 {
+   width: 300px;
+}
+.menu {
+	margin: 0;
+position: fixed;
+ width: 100%;
+ height: 50px;
+ font-family: 'Solway', serif;
+ }
+
+  .menu ul {
+  	z-index: 20;
+ list-style: none;
+ position: relative;
+ }
+
+ .menu ul li {
+ 	top: 0;
+ width: 150px;
+ float: right;
+ margin-right: 28px;
+ }
+
+ .menu a {
+
+ 	top: 0;
+ display: inline-block;
+ text-decoration: none;
+ text-align: right;
+ color: #F27B5A;
+ }
+
+.menu ul ul {
+ position: absolute;
+ visibility: hidden;
+ }
+
+ .menu ul li:hover ul {
+ visibility: visible;
+ }
+
+.menu a:hover {
+	 transition: all .4s;
+ background-color: #F27B5A;
+ color: #555;
+ }
+ .menu ul ul li {
+ float: none;
+ }
+
+	#background-img{
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		left: 0px;
+		top: 0px;
+		opacity: 1.0;
+		/* Blue 2 */
+		border: 1px solid #2D9CDB;
+		box-sizing: border-box;
+		filter: blur(3.5px) brightness(80%); 
+	}
+	
+	#logo{
+		z-index: 1;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		margin-right: 200px;
+
+	}
+	#titulo{
+				z-index: 1;
+
+		font-family: 'Sansita', sans-serif;
+		font-size: 42px;
+		color: #F27B5A;
+		position: fixed;
+		left: 100px;
+		top: 0.5px;
+		
+	}
+
+	#texto1{
+		font-family: 'Solway', serif;
+		color: #FF3F0A;
+		font-size: 78px;
+				 width: 100%;
+		line-height: 5px;
+        height:100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+	}
+	mark {
+		background: transparent;
+		margin: 3px;
+		color: #fff;
+	}
+
+	
+	#container1 {
+		display: flex;
+		width: 100%;
+		left: 0px;
+		height: 100%;
+		padding: 0;
+		align-self: center;
+
+	}
+
+
+	#container1 h2 {
+		font-family: 'Solway', serif;
+		color: #FF3F0A;
+		font-size: 30px;
+	}
+	.flex-item{
+		margin: 10px;
+		padding: 0px;
+		width: 50%;
+		text-align: center;
+
+	}
+	.flex-item h2{
+		font-family: 'Solway', serif;
+		color: #FF3F0A;
+		font-size: 30px;
+	}
+	#texto_1 , #texto_2, #ball{
+		font-family: 'Glegoo', serif;
+		font-size: 15px;
+	}
+	#ball{
+		/*Circulo*/
+		width: 300px;
+		height: 300px;
+		background: #FFFFFF;
+		-moz-border-radius: 150px;
+		border-radius: 150px;
+		color: #000000;
+		/*Posição*/
+		z-index: 0;
+				position: absolute;
+
+		top: 845px;
+		right: 46px;
+	}
+	#ball p{
+		width: 300px;
+		position: absolute;
+		height: 300px;
+		-moz-border-radius: 150px;
+		border-radius: 150px;
+		/*border-style: solid;*/
+		top: -16px;
+		right: -4px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#container2{
+		display: flex;
+		padding: 0px 20px 20px 20px;
+	}
+	#container2 h2{
+		font-family: 'Solway', serif;
+		color: #FF3F0A;
+		font-size: 30px;
+	}
+	#container2 p{
+		font-family: 'Glegoo', serif;
+		font-size: 15px;
+		display: inline;
+	}
+	#ball2{
+		margin: 65px 20px 0px 50px;
+		width: 300px;
+float: left;
+		position: absolute;
+		top: 1160px;
+		right: 60px;
+		height: 300px;
+		background: #FF3F0A;
+		-moz-border-radius: 150px;
+		border-radius: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	#ball2 h2{
+		margin-left: 38px;
+		color: #FFFFFF;
+		font-size: 35px;
+	}
+	#picture {
+		position: relative;
+		z-index: 0;
+		width: 50%;
+		height: 60%;
+		
+		margin: 5px;  
+
+	}
+	footer {
+		font-family: 'Solway', serif;
+		color: #FFFFFF;
+		font-size: 14px;
+		width: 100%;
+
+		padding: 3px;
+		margin: 0;
+		padding: 0;
+		background-color: #696D7D;
+		position: static;
+		bottom: 0px; 
+	}
+	footer a{
+		color: white;
+	}
+	footer a:visited{
+		color: white;
+	}
+
+	.slider {
+		margin: 0; padding: 0;
+	 display: block;
+  height: 293px;
+   width: 1000px;
+   margin: auto;
+       margin-top: 20px;
+ position: relative;
+}
+
+ .slider li {
+   list-style: none;
+    position: absolute;
+ }
+
+.slider img {
+    margin: auto;
+height: 100%;
+   width: 100%;
+  vertical-align: top;
+}
+.slider input {
+    display: none;
+}
+
+.slider label {
+   background-color: #000;
+  bottom: 10px;
+   cursor: pointer;
+  display: block;
+   height: 10px;
+    position: absolute;
+   width: 10px;
+    z-index: 10;
+ }
+
+ .slider li:nth-child(1) label {
+     left: 10px;
+ }
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+ }
+
+.slider li input:checked ~ img{
+   opacity: 1;
+   visibility: visible;
+    z-index: 10;
+ }
+
+ .flex-caption {
+ 	display: block;
+  width: 20%;
+  padding: 1%;
+  left: 200px;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.slider p {
+  opacity: 0;
+  visibility: hidden;
+ }
+
+.slider caption input:checked ~ p{
+   opacity: 1;
+   visibility: visible;
+    z-index: 10;
+ }
+ /*Catalogo*/
+ #catalogo-box{
+		padding-top: 120px;
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+  		grid-template-rows: auto;
+  		column-gap: 20px;
+  		grid-row-gap: 35px;
+		}
+	.prod-item{
+		font-family: 'Solway', serif;
+	  	font-size: 16px;
+		/*border-style: solid;
+		border-width: 0.1px;
+		border-radius: 12px;*/
+	}
+	.btn{
+		width: 100%;
+		background-color: #3A3FB4;
+		color: #E5E5E5;
+		font-family: 'Solway', serif;
+		padding: 12px;
+		border-radius: 3px;
+		border-width: 0px;
+
+	}
+	.btn:hover{
+		cursor: pointer;
+	}
+	</style>
+	</head>
+	</html>

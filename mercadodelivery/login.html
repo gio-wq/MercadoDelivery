@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - MercadoDelivery</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="\mercadodelivery/css/login-style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Sansita&family=Solway&display=swap" rel="stylesheet">
+</head>
+<body>
+	<img src='\mercadodelivery/imagens/4043.jpg' id='background-img'>
+	<div id="intro">
+	<figure><a href="/mercadodelivery/index.php"><img src='\mercadodelivery/imagens/logo.png' id='' width='120'/></a></figure>
+
+  </div>
+	
+			<div id='form-login'>
+		<center>
+			<h2>Área de Login</h2>
+		</center>
+		<form name='form-login' action='\mercadodelivery/scripts/login.php' method='post'>
+		<p>
+			<label>E-mail:</label><br/>
+			<input type='text' name='email_cliente' size='40' required/>
+		</p>
+		<p>
+			<label>Senha:</label><br/>
+			<input type='password' name='senha' size='40' maxlength='8' required/>
+		</p>
+			<input type='submit' value='entrar' name='entrar' id='btn'/>
+		</form>	
+	</div>
+	<hr width='26%' align='center' color='white' id='linha'/>
+	<section id='legenda'>
+		<center><h4>Não tem uma conta? Se cadastre <a href='cadastro.html'>aqui</a></h4>
+		</center>
+	</section>
+</body>
+<footer>
+		<center>
+		<p>Desenvolvido pelo <a href=''>Grupo Ártemis&reg;</a></p>
+		<p>Direitos reservados&copy;</p>
+		</center>
+	</footer>
+</html>

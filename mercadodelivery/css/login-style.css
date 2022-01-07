@@ -1,0 +1,179 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Glegoo&family=Sansita&family=Solway&display=swap" rel="stylesheet"> 
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Glegoo&family=Sansita&family=Solway&display=swap');
+	html, body {
+  height: 100%;
+  margin: 0;
+}
+	#background-img{
+		position: fixed;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		opacity: 1.0;
+		/* Blue 2 */
+		border: 1px solid #2D9CDB;
+		box-sizing: border-box;
+		filter: blur(3.5px) brightness(80%); 
+	}
+	.menu {
+	margin: 0;
+position: fixed;
+ width: 100%;
+ height: 50px;
+ font-family: 'Solway', serif;
+ }
+
+  .menu ul {
+ list-style: none;
+ position: relative;
+ }
+
+ .menu ul li {
+ 	top: 0;
+ width: 150px;
+ float: right;
+ }
+
+ .menu a {
+
+ 	top: 0;
+ display: inline-block;
+ text-decoration: none;
+ text-align: right;
+ color: #F27B5A;
+ }
+
+.menu ul ul {
+ position: absolute;
+ visibility: hidden;
+ }
+
+ .menu ul li:hover ul {
+ visibility: visible;
+ }
+
+.menu a:hover {
+	 transition: all .4s;
+ background-color: #F27B5A;
+ color: #555;
+ }
+ .menu ul ul li {
+ float: none;
+ }
+
+ #logo{
+		z-index: 1;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		margin-right: 200px;
+
+	}
+	#titulo{
+				z-index: 1;
+
+		font-family: 'Sansita', sans-serif;
+		font-size: 42px;
+		color: #F27B5A;
+		position: fixed;
+		left: 100px;
+		top: 0.5px;
+		
+	}
+
+
+
+
+	#su{
+		position: relative;
+		font-family: 'Solway', serif;
+		color: #FFFFFF;
+		border-radius: 25px;
+	}
+
+#intro {
+background-color: transparent;  text-align: center;
+  width: 350px;
+    margin: 0 auto;
+
+ }
+
+	#form-login{
+		width: 318px;
+		height: 316px;
+		background-color: #fff;
+		position: relative;
+		margin: 0 auto;
+		opacity: 0.15;
+		border-radius: 20px;
+		padding: 15px;
+		position: relative;
+		z-index: 4;
+		opacity: 1;
+		font-family: 'Crete Round', serif;
+		color: #000;
+	}
+
+	#form-login p{
+		margin-top: 35px;
+		margin-left: 0px;
+	}
+	h2{
+		font-size: 28px;
+	}
+
+	#btn{
+		border-radius: 47px;
+		padding: 8px 20px 8px 20px;
+		border-width: 0px;
+		background-color: #BEEDAA;
+		font-family: 'Crete Round', serif;
+		margin-left: 199.7px;
+		margin-top: 20px;
+	}
+	#btn:hover{
+		cursor: pointer;
+	}
+	#linha{
+		position: relative;
+		
+	}
+	#legenda{
+		margin-top: 10px;
+		font-family: 'Solway', serif;
+		color: #000;
+	}
+	#legenda a{
+		color: #000;
+	}
+	#legenda a:visited{
+		color: #FFF;
+	}
+
+	footer {
+		font-family: 'Solway', serif;
+		color: #FFFFFF;
+		font-size: 14px;
+		width: 100%;
+		padding: 3px;
+		margin: 20px 0px 0px 0px;
+		background-color: transparent;
+		position: static;
+		left: 0vh;
+		bottom: 0px; 
+	}
+	footer a{
+		color: white;
+	}
+	footer a:visited{
+		color: white;
+	}
+</style>
+</head>
